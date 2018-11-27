@@ -35,13 +35,15 @@ this.function = operation;
 this.number1 = nb1;
 this.number2=nb2;
 
-    console.log( this.nom + this.number1+ this.number2 + "=<resultat invocation operation>")
+    console.log( (this.nom) + this.number1+ this.number2 + "<resultat invocation operation>");
 
 }
 
+var nb1 = 15;
+var nb2 = 10;
 afficherOperation("somme = " , somme ,20+40);
 afficherOperation("multiplication = ", multiplication, 10*20);
 afficherOperation("soustraction = " , function(nb1,nb2){
     return nb1-nb2;
-
-}
+   
+});
