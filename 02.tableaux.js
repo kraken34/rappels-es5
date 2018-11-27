@@ -12,5 +12,8 @@ cl("lettreADansToutesLesVilles =",lettreADansToutesLesVilles);
 var auMoinsUneVilleAvecUnTiret=villes.some((lieu)=>lieu.includes("-"))
 cl("auMoinsUneVilleAvecUnTiret =",auMoinsUneVilleAvecUnTiret)
 
+var villesSansTiretSansEspace=villes.filter((lieu)=>!lieu.includes(' ')&&!lieu.includes('-'));
+cl("villesSansTiretSansEspace =",villesSansTiretSansEspace);
+
 var villesMajusculeSeTerminantParS=villes.filter((lieu)=>lieu.charAt(lieu.length-1)=='s').map((lieu)=>lieu.toUpperCase())
 cl("villesMajusculeSeTerminantParS =",villesMajusculeSeTerminantParS)
