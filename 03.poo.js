@@ -4,45 +4,33 @@ function personne (nom,prnom,pseudo){
     this.prenom = "prenom";
     this.pseudo  =" pseudo";
 
-}
-
-personne.getNomcomplet(nom,prenom,pseudo);
-
-function personne (nom,prnom,pseudo){
-
-    this.nom = "Lemaire";
-    this.prenom = "jules";
-    this.pseudo  =" jules77";
-}
-function personne (nom,prnom,pseudo){
-
-    this.nom = "Lemaire";
-    this.prenom = "paul";
-    this.pseudo  =" paul44";
+    this.getNomComplet = function() { 
+        
+        return this.nom+" "+this.prenom+" "+this.pseudo;
+ 
+    } 
 
 }
-function personne (nom,prnom,pseudo, nomcomplet){
 
-    this.nom = "jules";
-    this.prenom = "jules";
-    this.pseudo  =" jules";
-    this.nomcomplet= "jules";
-    
-}
+// création d'objet jules et paul 
+
+var jules = new Personne("LEMAIRE", "Jules", "jules77"); 
+
+var paul = new Personne("LEMAIRE", "Paul", "paul44"); 
+
+
+console.log(jules.nom, jules.prenom, jules.pseudo); 
+ 
+console.log(jules.getNomComplet()); 
+
+// afficher Paul
+afficherPersonne(paul); 
+
 console.log(personne);
 
-function personne (nom,prnom,pseudo, nomcomplet){
+jules.pseudo = "jules44"; 
+ 
+afficherPersonne(jules); 
 
-    this.nom = "paul";
-    this.prenom = "paul";
-    this.pseudo  =" paul";
-    this.nomcomplet= "paul";
-    
-}
-function afficherPersonne (nom,prnom,pseudo){
 
-    this.nom = "nom";
-    this.prenom = "prenom";
-    this.pseudo  =" pseudo";
-
-}
+ 
