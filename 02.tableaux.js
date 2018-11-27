@@ -9,4 +9,6 @@ console.log("auMoinsUneVilleAvecUnTiret = ",auMoinsUneVilleAvecUnTiret);
 var villesSansTiretSansEspace = villes.filter(v => (!v.includes(' ')&&!v.includes('-')));
 console.log("villesSansTiretSansEspace  = ",villesSansTiretSansEspace);
 
-//Chainer les fonctions
+//Chainer les fonctions (tab -> fin par s, mise maj)
+var villesMajusculeSeTerminantParS = villes.filter(v=>v.lastIndexOf("s")).map(v=> v.toUpperCase());
+console.log("villesMajusculeSeTerminantParS  = ",villesMajusculeSeTerminantParS);
