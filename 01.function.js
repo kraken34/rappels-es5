@@ -32,10 +32,15 @@ console.log(resultat3);
 
 //Fonction comme élément du 1er ordre
 
-function afficherOperation(nomOperation, operation,nb1, nb2) {
-  this.nomOperation = "yolo";
-  this.operation();
-  this.nb1;
-  this.nb2;
-  return 
+var afficherOperation = function(nomOperation, operation,nb1, nb2) {
+  this.nom = nomOperation;
+  this.operation = operation;
+  this.nb1 = nb1;
+  this.nb2 = nb2;
+  console.log(this.nom + "(" + this.nb1 + "," + this.nb2 + ")", "=", this.operation); 
 }
+
+var n1 = 20;
+var n2 = 40;
+afficherOperation("Somme", somme,  n1, n2);
+afficherOperation("Multiplication", multiplication,  nombre1, nombre2);
