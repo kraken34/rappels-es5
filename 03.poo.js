@@ -37,7 +37,7 @@ Personne.prototype.getInitiales = function() {
 console.log(jules.getInitiales());
 
 //Objet sans fonction constructeur
-var robert = Personne;
+var robert = Personne();
 robert.prenom = "Robert";
 robert.nom = "LEPREFET";
 robert.pseudo = "robert77";
